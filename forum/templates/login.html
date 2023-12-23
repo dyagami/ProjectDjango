@@ -1,0 +1,38 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/teye.png' %}"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+    <title>┌ Connect to the network ┘</title>
+</head>
+<body>
+    <div id="background"></div>
+    <div class="centered-content">
+        <h1>Connect to the network</h1>
+        <p id="placeholderTexts">プレゼント・デイ プレゼント・タイム</p>        
+        <form method="post" action="{% url 'login' %}">
+            {% csrf_token %}
+            <div>
+                <input type="text" name="username" placeholder="User name" required>
+            </div>
+            <div>
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+            <button type="submit">Connect</button>
+        </form>
+        <a href="{% url 'register' %}">You do not have an account? Connect</a>
+        {% if form.errors %}
+            <p style="color: #D97993;">Incorrect username or password</p>
+        {% endif %}
+        <a href="{% url 'home' %}">Home</a>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/teye.png' %}"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <title>┌ T e r m s ┘</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+</head>
+<body>
+    <div id="background"></div>
+    <center>
+        <img src="{% static 'img/navi.webp' %}" id="navi">
+        <div>
+            <h1>┌ Terms ┘</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eleifend commodo dictum. Vestibulum finibus suscipit augue ut fermentum. In lobortis rhoncus ex, a suscipit nisl auctor ac. Nunc fringilla, elit eget tristique condimentum, turpis libero facilisis nunc, in convallis nisi turpis tincidunt justo. Duis purus mauris, laoreet sit amet nibh sed, malesuada cursus leo. Duis nec mi placerat enim dapibus tincidunt. Quisque metus augue, auctor eu vulputate a, sagittis auctor odio. Fusce blandit neque a sagittis consequat. </p>
+            <p>Nullam non metus vel lorem faucibus gravida. Proin libero erat, fringilla sit amet molestie in, accumsan at leo. Morbi gravida ligula aliquet massa placerat, id ornare justo hendrerit. Mauris ornare vehicula tellus in laoreet. Ut eros elit, rutrum varius dignissim et, venenatis sit amet lectus. In elementum quam faucibus, blandit nibh sit amet, condimentum massa. Nullam rhoncus quam diam, ac rutrum justo dictum in. Nullam sit amet justo sed turpis placerat venenatis sed ac purus. Suspendisse tempor felis id nisi ornare, id interdum nisi ullamcorper. Aenean vel nunc leo. Praesent rutrum, massa sed malesuada accumsan, massa velit pharetra libero, vel gravida ipsum augue vel tellus. </p>
+            <p>In in sem euismod, blandit quam sit amet, iaculis lectus. Nulla malesuada nulla non viverra suscipit. Etiam venenatis ultricies massa, ac facilisis sem aliquet vitae. Aenean venenatis arcu nunc, vitae ultrices est imperdiet eget. In sit amet orci id mi fermentum ultricies ac sed nisl. Duis facilisis efficitur massa vel sodales. Morbi feugiat elementum quam, quis suscipit arcu sodales lobortis. Suspendisse volutpat erat vulputate nunc sodales, in congue neque vestibulum. Fusce placerat, dui sit amet cursus blandit, quam lorem porta urna, ac varius magna urna sagittis enim. Cras vestibulum finibus arcu sed vehicula. Sed bibendum nunc vitae augue accumsan, id posuere purus mattis. </p>
+            <p>Morbi eget dui viverra, tempor augue faucibus, placerat enim. Mauris placerat aliquam nunc, eget rutrum nulla tincidunt in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse leo odio, tincidunt et ultrices vitae, elementum ut dui. Suspendisse interdum est quis felis varius, et imperdiet lectus bibendum. Sed a ante in lorem ultricies auctor. Aliquam erat volutpat. Phasellus tincidunt posuere hendrerit.</p>
+        </div>
+        <a href="{% url 'home' %}">Back</a>
+    </center>
+</body>
+</html>

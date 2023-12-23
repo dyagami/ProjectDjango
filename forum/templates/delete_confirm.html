@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/teye.png' %}"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <title>┌ T e r m s ┘</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+</head>
+<body>
+    <div id="background"></div>
+    <center>
+        <img src="{% static 'img/navi.webp' %}" id="navi">
+        <h1>Are you sure?</h1>
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit">Deletet</button>
+            <a href="{% url 'home' %}">Cancel</a>
+    </form>
+    </center>
+</body>
+</html>
